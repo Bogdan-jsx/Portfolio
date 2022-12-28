@@ -24,14 +24,14 @@ if (window.scrollY >= 970) {    // If when page loaded user don't see first bloc
 }
 
 if (window.scrollY >= 350 && window.scrollY <= 1850) {     // If user looks at technologies list, it is visible, if he doesn't, it is not
-    technologiesListElem.style.display = "flex"
+    technologiesListElem.style.display = "block"
 } else {
     technologiesListElem.style.display = "none"
 }
 
 window.onscroll = () => {
     if (window.scrollY >= 350 && window.scrollY <= 1850) { // If user looks at technologies list, it is visible, if he doesn't, it is not (while scrolling)
-        technologiesListElem.style.display = "flex"
+        technologiesListElem.style.display = "block"
     } else {
         technologiesListElem.style.display = "none"
     }

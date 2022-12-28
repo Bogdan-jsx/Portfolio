@@ -9,6 +9,8 @@
     color: white;
     font-family: "Raleway", sans-serif;
     font-size: 36px;
+
+    display: none;
 }
 
 .contact-text-1 {

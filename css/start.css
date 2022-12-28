@@ -6,6 +6,7 @@
 
 html {
     overflow-y: scroll;
+    /* overflow-x: hidden; */
 }
 
 @keyframes nav-bar {
@@ -359,5 +360,11 @@ nav ul li:hover {
 @media screen and (max-width: 360px) {
     .welcome {
         padding-left: 12%;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    .start {
+        height: 660px;
     }
 }

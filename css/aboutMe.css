@@ -8,19 +8,29 @@
     color: white;
     font-size: 45px;
     font-family: "Raleway", sans-serif;
-    padding: 130px 8.85%;
+    padding: 10vh 8.85%;
     box-sizing: border-box;
 }
 
 .technologies {
     display: none;
     flex-wrap: wrap;
+    padding-bottom: 20px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    margin-top: 25px; 
+}
+
+.container-1 {
+    display: flex;
+    min-width: 1570px;
 }
 
 .technologies-frontend-wrapper {
-    width: 100%;
+    min-width: 1570px;
     height: 180px;
-    margin-top: 25px; 
 }
 
 .technologies-frontend {
@@ -34,7 +44,7 @@
 }
 
 .technologies-backend-wrapper {
-    width: 70%;
+    min-width: 1106px;
     height: 200px;
 }
 
@@ -47,7 +57,7 @@
 }
 
 .technologies-other-wrapper {
-    width: 28%;
+    min-width: 432px;
     height: 200px;
     margin-left: 2%;
 }
@@ -81,7 +91,7 @@
 
 .react-logo {
     left: 717px;
-    top: -60px;
+    top: -55px;
 }
 
 .ts-logo-frontend {
@@ -147,4 +157,45 @@
 
 .about-me-text-2 span {
     font-weight: 600;
+}
+
+@media screen and (max-height: 845px) {
+    .about-me {
+        padding: 2vh 8.85%;
+    }
+}
+@media screen and (max-height: 780px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 35px;
+    }
+    .about-me-text-2 {
+        margin-top: 15px;
+    }
+}
+@media screen and (max-height: 600px) {
+    .about-me {
+        height: 970px;
+        padding-top: 130px;
+        /* padding: 130px 8.85%;
+        font-size: 45px; */
+    }
+    .about-me-text-2 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 830px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 450px) and (min-height: 601px) {
+    .about-me {
+        height: 115vh;
+    }
 }
