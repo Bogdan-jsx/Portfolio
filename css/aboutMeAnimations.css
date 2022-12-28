@@ -1,0 +1,99 @@
+@keyframes skills {
+    0% {width: 0%;}
+    100% {width: 100%;}
+}
+
+/* @keyframes logo-appearing {
+    0% {display: none; opacity: 0;}
+    1% {display: block !important; opacity: 0;}
+    100% {display: block !important; opacity: 1;}
+} */
+
+@keyframes logo-appearing {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.technologies-frontend, .technologies-backend, .technologies-other {
+    animation-name: skills;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+/* 
+.technologies-backend {
+    animation-name: skills;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.technologies-other {
+    animation-name: skills;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+} */
+
+.technologies img {
+    /* display: none; */
+    opacity: 0;
+    animation-name: logo-appearing;
+    animation-duration: 300ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.html-logo {
+    animation-delay: 285ms;
+} 
+
+.css-logo {
+    animation-delay: 570ms;
+}
+
+.sass-logo {
+    animation-delay: 855ms;
+}
+
+.js-logo {
+    animation-delay: 1140ms;
+}
+
+.ts-logo-frontend {
+    animation-delay: 1425ms;
+}
+
+.react-logo {
+    animation-delay: 1710ms;
+}
+
+.redux-logo {
+    animation-delay: 1995ms;
+}
+
+.nodejs-logo {
+    animation-delay: 500ms;
+}
+
+.ts-logo-backend {
+    animation-delay: 1000ms;
+}
+
+.mongodb-logo {
+    animation-delay: 1500ms;
+}
+
+.mysql-logo {
+    animation-delay: 2000ms;
+}
+
+.git-logo {
+    animation-delay: 1000ms;
+}
+
+.photoshop-logo {
+    animation-delay: 2000ms;
+}

@@ -29,7 +29,7 @@
     overflow-x: hidden;
     background-color: #e4d069;
 
-    display: none;
+    /* display: none; */
 }
 
 .welcome {
