@@ -1,11 +1,16 @@
 * {
     margin: 0;
     padding: 0;
+    overflow: hidden;
+}
+
+html {
+    overflow-y: scroll;
 }
 
 @keyframes nav-bar {
     0% {width: 0%;}
-    100% {width: 22%;}
+    100% {width: 20%;}
 }
 
 @keyframes welcome {
@@ -25,6 +30,7 @@
     width: 100%;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     overflow-x: hidden;
     background-color: #e4d069;
@@ -82,7 +88,6 @@ nav {
 
 nav ul {
     opacity: 0;
-    
 
     animation-name: nav-list-appearing;
     animation-duration: 1s;
@@ -103,7 +108,7 @@ nav ul {
 nav ul li {
     border-top: 2px solid #e4b169;
     border-bottom: 2px solid #e4b169;
-    padding: 110px 0;
+    padding: 11.35vh 0;
     width: 95%;
     position: relative;
     transition: font-size 1s, color .5s, width .5s, border .5s;
@@ -127,4 +132,232 @@ nav ul li:hover {
     border-bottom: 2px solid #d2a360;
     border-top: 2px solid #d2a360;
     z-index: 1;
+}
+
+/*Adaptivity*/
+
+@media screen and (max-width: 1600px) {
+    @keyframes welcome {
+        0% {padding-left: 22%; width: 100%;}
+        100% {padding-left: 8%; width: 83%;}
+    }
+    @keyframes nav-bar {
+        0% {width: 0%;}
+        100% {width: 17%;}
+    }
+    
+}
+
+@media screen and (max-width: 1500px) {
+    .welcome {
+        padding-left: 15%;
+    }
+
+    @keyframes welcome {
+        0% {padding-left: 15%; width: 100%;}
+        100% {padding-left: 8%; width: 83%;}
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    nav ul li {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .introducing-text {
+        font-size: 57.6px;
+    }
+    
+    .welcome-text {
+        font-size: 48px;
+    }
+
+    .welcome {
+        padding-left: 18%;
+    }
+
+    @keyframes welcome {
+        0% {padding-left: 18%; width: 100%;}
+        100% {padding-left: 8%; width: 83%;}
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    @keyframes nav-bar {
+        0% {width: 0%;}
+        100% {width: 20%;}
+    }
+
+    @keyframes welcome {
+        0% {padding-left: 18%; width: 100%;}
+        100% {padding-left: 3%; width: 80%;}
+    }
+
+    nav ul {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .introducing-text {
+        font-size: 47px;
+    }
+    
+    .welcome-text {
+        font-size: 39px;
+    }
+
+    .welcome {
+        padding-top: 30vh;
+        padding-left: 15%;
+    }
+
+    @keyframes welcome {
+        0% {padding-left: 15%; width: 100%;}
+        100% {padding-left: 8%; width: 83%;}
+    }
+}
+
+/* @media screen and (max-width: 750px) {
+    .start {
+        background-color: black;
+    }
+} */
+
+@media screen and (max-width: 825px) {
+    .start {
+        flex-direction: column;
+    }
+
+    .welcome {
+        width: 100%;
+        padding-top: 20vh;
+        padding-left: 11%;
+    }
+
+    @keyframes welcome {
+        0% {padding-top: 20vh; height: 100%;}
+        100% {padding-top: 15vh; height: 80%;}
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    @keyframes nav-bar {
+        0% {height: 0%;}
+        100% {height: 20%;}
+    }
+
+    nav ul {
+        flex-direction: row;
+        height: 80%;
+        width: 95%;
+    }
+
+    nav ul li {
+        border: none;
+        border-left: 2px solid #e4b169;
+        border-right: 2px solid #e4b169;
+        top: 0px;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        transition: height 1s, font-size 1s, color 1s, border 1s;
+        /* height: 90%; */
+    }
+
+    nav ul li:hover {
+        height: 100%;
+        font-size: 38px;
+        border-left: 2px solid #d2a360;
+        border-right: 2px solid #d2a360;
+    }
+
+    nav ul li:nth-child(1) {
+        left: 0;
+        top: 0px;
+    }
+    nav ul li:nth-child(2) {
+        left: -2px;
+        top: 0px;
+    }
+    nav ul li:nth-child(3) {
+        left: -4px;
+        top: 0px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .welcome {
+        padding-left: 3%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .welcome {
+        padding-left: 8%;
+    }
+
+    .introducing-text {
+        font-size: 37px;
+    }
+    
+    .welcome-text {
+        font-size: 31px;
+        margin-top: 50px;
+    }
+
+    nav ul li {
+        font-size: 28px;
+    }
+    nav ul li:hover {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .welcome {
+        padding-left: 5%;
+    }
+
+    .introducing-text {
+        font-size: 33px;
+    }
+    
+    .welcome-text {
+        font-size: 27px;
+    }
+
+    nav ul li {
+        font-size: 25px;
+    }
+    nav ul li:hover {
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .welcome {
+        padding-left: 8%;
+    }
+    nav ul li {
+        font-size: 18px;
+    }
+    nav ul li:hover {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .welcome {
+        padding-left: 12%;
+    }
 }

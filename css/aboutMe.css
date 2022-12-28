@@ -30,6 +30,7 @@
     box-sizing: border-box;
 
     background-image: url(../images/frontend-background.png);
+    background-repeat: no-repeat;
 }
 
 .technologies-backend-wrapper {
@@ -42,6 +43,7 @@
     height: 100%; 
 
     background-image: url(../images/backend-background.png);
+    background-repeat: no-repeat;
 }
 
 .technologies-other-wrapper {
@@ -55,6 +57,7 @@
     height: 100%; 
 
     background-image: url(../images/other-background.png);
+    background-repeat: no-repeat;
 }
 
 .technologies p {
