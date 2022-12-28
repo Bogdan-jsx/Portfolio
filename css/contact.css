@@ -1,0 +1,90 @@
+.contact {
+    width: 100%;
+    height: 100vh;
+    padding: 130px 8.85%;
+    box-sizing: border-box;
+
+    background-color: #d3db74;
+
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+}
+
+.contact-text-1 {
+    font-size: 45px;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.contact form {
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end
+}
+
+.contact-fields {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-inputs {
+    width: 47%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-inputs > input {
+    height: 90px;
+}
+
+.contact > form textarea {
+    width: 50%;
+    height: 250px;
+    resize: none;
+}
+
+.contact-inputs > input, .contact > form textarea, .submit {
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: #d3db74;
+}
+
+.contact-inputs > input::placeholder, .contact > form textarea::placeholder {
+    color: #e9edc0;
+}
+
+.submit {
+    width: 50%;
+    height: 90px;
+    margin-top: 35px;
+    background-color: #bbe469;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+.contact-text-2, .contact-text-3 {
+    margin-left: 50%;
+}
+
+.contact-text-2 {
+    margin-top: 40px;
+}
+
+.contact-text-3 {
+    margin-top: 35px;
+}
