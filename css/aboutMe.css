@@ -1,0 +1,130 @@
+.about-me {
+    width: 100%;
+    height: 100vh;
+    background-color: #d3db74;
+
+    color: white;
+    font-size: 45px;
+    font-family: "Raleway", sans-serif;
+    padding: 130px 8.85%;
+    box-sizing: border-box;
+
+    margin-bottom: 2000px;
+}
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technologies-frontend {
+    width: 100%;
+    height: 180px;
+    margin-top: 25px;
+
+    background-image: url(../images/frontend-background.png);
+}
+
+.technologies-backend {
+    width: 70%;
+    height: 200px;
+
+    background-image: url(../images/backend-background.png);
+}
+
+.technologies-other {
+    width: 28%;
+    height: 200px;
+    margin-left: 2%;
+
+    background-image: url(../images/other-background.png);
+}
+
+.technologies p {
+    font-weight: 500;
+    margin-top: 10px;
+}
+.technologies-frontend p {
+    margin-top: 5px;
+}
+
+.technologies img {
+    position: relative;
+}
+
+/*Start positioning logos*/
+
+.redux-logo {
+    left: 865px;
+    top: 8px;
+}
+
+.react-logo {
+    left: 717px;
+    top: -60px;
+}
+
+.ts-logo-frontend {
+    left: 550px;
+    top: 33px;
+}
+
+.js-logo {
+    left: 440px;
+    top: -40px;
+}
+
+.sass-logo {
+    left: 280px;
+    top: 30px;
+}
+
+.css-logo {
+    left: 165px;
+    top: -25px;
+}
+
+.html-logo {
+    left: 10px;
+    top: 10px;
+}
+
+.mysql-logo {
+    left: 670px;
+    top: 10px;
+}
+
+.mongodb-logo {
+    left: 405px;
+    top: -30px;
+}
+
+.ts-logo-backend {
+    left: 195px;
+    top: 50px;
+}
+
+.nodejs-logo {
+    left: 25px;
+    top: 15px;
+}
+
+.photoshop-logo {
+    left: 245px;
+    top: -20px;
+}
+
+.git-logo {
+    left: 40px;
+    top: 15px;
+}
+
+/*Finish positioning logos*/
+
+.about-me-text-2 {
+    margin-top: 40px;
+}
+
+.about-me-text-2 span {
+    font-weight: 600;
+}
