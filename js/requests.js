@@ -17,7 +17,7 @@ function showOneWork(work) {
 
     const newWorkElem = document.createElement("div");
     newWorkElem.classList.add("work");
-    newWorkElem.style.backgroundImage = `url(http://localhost:3000/works/image/${image})`;
+    newWorkElem.style.backgroundImage = `url(${image})`;
 
     newWorkElem.innerHTML = `
     <div class="info">

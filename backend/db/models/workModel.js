@@ -19,7 +19,7 @@ const workSchema = new Schema({
         required: false,
     },
     image: {
-        type: Schema.Types.ObjectId,
+        type: String,
         required: true,
     }
 })
