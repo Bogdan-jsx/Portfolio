@@ -112,6 +112,12 @@ ul {
     background-image: url(../images/Blitz.png);
 }
 
+@media screen and (max-width: 1350px) {
+    .portfolio-text {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .portfolio {
         font-size: 35px;
@@ -122,9 +128,27 @@ ul {
     }
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1015px) {
+    .portfolio {
+        height: 75vh;
+    }
+}
+
+/* @media screen and (max-width: 880px) {
     .portfolio {
         padding: 6vh 5%;
+    }
+} */
+
+@media screen and (max-width: 830px) {
+    .portfolio-text {
+        font-size: 25px;
+    }
+    .work-description, .work-used-technologies, .work ul {
+        font-size: 25px;
+    }
+    .portfolio {
+        font-size: 30px;
     }
 }
 
@@ -135,8 +159,71 @@ ul {
     }
 }
 
-@media screen and (max-width: 400px) {
-    .work-description, .work-used-technologies, .work ul {
+
+@media screen and (max-width: 585px) {
+    .portfolio-text {
+        font-size: 20px;
+    }
+    .portfolio {
         font-size: 25px;
+    }
+    .work {
+        height: 350px;
+    }
+    .work-name {
+        font-size: 22px;
+    }
+    .work-description, .work-used-technologies, .work ul {
+        font-size: 18px;
+        line-height: 150%;
+    }
+    .work-used-technologies {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .work {
+        height: 250px;
+    }
+    .work-name {
+        font-size: 18px;
+    }
+    .work-description, .work-used-technologies, .work ul {
+        font-size: 16px;
+        line-height: 130%;
+    }
+    .work-description {
+        margin-top: 0px;
+    }
+    .work-used-technologies {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-height: 900px) and (min-width: 1201px) {
+    .portfolio {
+        padding: 7vh 8.85%;
+    }
+    .my-works {
+        margin-top: 7vh;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    .portfolio {
+        height: 700px;
+    }
+}
+
+@media screen /*and (max-height: 700px)*/ and (max-width: 585px) {
+    .portfolio {
+        height: 630px;
+    }
+}
+
+@media screen /*and (max-height: 700px)*/ and (max-width: 400px) {
+    .portfolio {
+        height: 550px;
     }
 }

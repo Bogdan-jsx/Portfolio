@@ -3,7 +3,9 @@ AOS.init()
 const navListElem = document.querySelector("nav ul");
 const technologiesListElem = document.querySelector(".technologies");
 const welcome = document.querySelector(".welcome");
-const navBar = document.querySelector("nav")
+const navBar = document.querySelector("nav");
+const introducingText = document.querySelector(".introducing-text");
+const welcomeText = document.querySelector(".welcome-text");
 
 if (window.scrollY >= 970) {    // If when page loaded user don't see first block, it loads immediately without long animations
     welcome.style.animationName = "none";
@@ -35,4 +37,19 @@ window.onscroll = () => {
     } else {
         technologiesListElem.style.display = "none"
     }
+}
+
+window.onresize = () => {
+    if (document.documentElement.clientHeight <= 660) {
+        introducingText.removeAttribute("data-aos");
+        welcomeText.removeAttribute("data-aos");
+    } else {
+        introducingText.setAttribute("data-aos", "fade-down-right");
+        welcomeText.setAttribute("data-aos", "fade-up-left");
+    }
+}
+
+if (document.documentElement.clientHeight <= 660) {
+    introducingText.removeAttribute("data-aos");
+    welcomeText.removeAttribute("data-aos");
 }

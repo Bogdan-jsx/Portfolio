@@ -168,11 +168,57 @@
     .about-me-text-1, .about-me-text-2 {
         font-size: 35px;
     }
+    .technologies {
+        font-size: 35px;
+        line-height: 50px;
+    }
     .about-me-text-2 {
         margin-top: 15px;
     }
+    .redux-logo {
+        left: 875px;
+    }
 }
-@media screen and (max-height: 600px) {
+
+
+@media screen and (max-width: 1350px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 30px;
+    }
+    .technologies {
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .redux-logo {
+        left: 880px;
+    }
+}
+
+@media screen and (max-width: 1015px) {
+    .about-me {
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 25px;
+    }
+    .technologies {
+        font-size: 25px;
+        line-height: 50px;
+    }
+    .redux-logo {
+        left: 890px;
+    }
+}
+@media screen and (max-width: 450px) and (min-height: 601px) {
+    .about-me {
+        height: 115vh;
+    }
+}
+
+@media screen and (max-height: 700px) {
     .about-me {
         height: 970px;
         padding-top: 130px;
@@ -183,19 +229,37 @@
         margin-top: 40px;
     }
 }
-
-@media screen and (max-width: 1350px) {
-    .about-me-text-1, .about-me-text-2 {
-        font-size: 30px;
-    }
-}
-@media screen and (max-width: 830px) {
-    .about-me-text-1, .about-me-text-2 {
-        font-size: 25px;
-    }
-}
-@media screen and (max-width: 450px) and (min-height: 601px) {
+@media screen and (max-height: 700px) and (max-width: 1350px) {
     .about-me {
-        height: 115vh;
+        height: 800px;
+        padding-top: 50px;
+        /* padding: 130px 8.85%;
+        font-size: 45px; */
+    }
+    .about-me-text-2 {
+        margin-top: 20px;
     }
 }
+
+@media screen and (max-width: 585px) {
+    .about-me-text-1, .about-me-text-2 {
+        font-size: 20px;
+    }
+    .technologies {
+        font-size: 20px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-me {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .about-me {
+        height: 850px;
+    }
+}
+
