@@ -119,6 +119,7 @@ nav ul li {
 nav ul li a {
     color: #e4b169;
     text-decoration: none;
+    transition: color .5s;
 }
 
 nav ul li:nth-child(1) {
@@ -138,6 +139,10 @@ nav ul li:hover {
     border-bottom: 2px solid #d2a360;
     border-top: 2px solid #d2a360;
     z-index: 1;
+}
+
+nav ul li:hover > a {
+    color: #d2a360;
 }
 
 /*Adaptivity*/

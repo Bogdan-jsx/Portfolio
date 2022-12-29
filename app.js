@@ -18,10 +18,11 @@ const workModel = require("./db/models/workModel").model;
 const messageModel = require("./db/models/messageModel").model;
 
 app.use(cors());
+app.use(express.static(__dirname + "/public"));
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect(`${process.env.DB_HOST}${process.env.DB_NAME}`, {
+mongoose.connect(`${process.env.FULL_DB_ADRESS}`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

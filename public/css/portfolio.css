@@ -108,14 +108,6 @@ ul {
     color: white;
 }
 
-.one {
-    background-image: url(../images/Teashop.png);
-}
-
-.two {
-    background-image: url(../images/Blitz.png);
-}
-
 @media screen and (max-width: 1350px) {
     .portfolio-text {
         font-size: 30px;
