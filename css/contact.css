@@ -1,7 +1,7 @@
 .contact {
     width: 100%;
     height: 100vh;
-    padding: 130px 8.85%;
+    padding: 13.4vh 8.85%;
     box-sizing: border-box;
 
     background-color: #d3db74;
@@ -10,7 +10,7 @@
     font-family: "Raleway", sans-serif;
     font-size: 36px;
 
-    display: none;
+    /* display: none; */
 }
 
 .contact-text-1 {
@@ -89,4 +89,76 @@
 
 .contact-text-3 {
     margin-top: 35px;
+}
+
+@media screen and (max-height: 800px) {
+    .contact {
+        padding: 6vh 8.85%;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .contact {
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .contact, .contact-inputs > input, .contact > form textarea, .submit {
+        font-size: 28px;
+    }
+    .contact-text-1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .contact {
+        height: 1000px;
+    }
+    .contact > form, .contact-fields {
+        flex-direction: column;
+    }
+    .contact > form, .contact-fields, .contact-inputs {
+        width: 100%;
+        margin: 0;
+    }
+    .contact-inputs {
+        height: unset;
+    }
+    .contact-inputs > input, .contact > form textarea {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 0;
+        border-radius: 6px;
+    }
+    .contact > form textarea {
+        height: 200px;
+    }
+    .submit {
+        width: 100%;
+        border-radius: 6px;
+    }
+    .contact-text-2, .contact-text-3 {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact-inputs > input, .submit {
+        height: 50px;
+        padding: 7px;
+    }
+
+    .contact > form textarea {
+        padding: 7px;
+    }
+
+    .contact, .contact-inputs > input, .contact > form textarea, .submit {
+        font-size: 20px;
+        border-radius: 4px;
+    }
+    .contact-text-1 {
+        font-size: 24px;
+    }
 }

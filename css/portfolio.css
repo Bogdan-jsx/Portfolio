@@ -128,11 +128,11 @@ ul {
     }
 }
 
-@media screen and (max-width: 1015px) {
+/* @media screen and (max-width: 1015px) {
     .portfolio {
         height: 75vh;
     }
-}
+} */
 
 /* @media screen and (max-width: 880px) {
     .portfolio {
@@ -156,6 +156,13 @@ ul {
     .work {
         margin-left: 0;
         min-width: 100%;
+        border-radius: 6px;
+    }
+    .info {
+        border-radius: 0 0 6px 6px;
+    }
+    .work:hover > .info {
+        border-radius: 6px;
     }
 }
 
@@ -222,8 +229,15 @@ ul {
     }
 }
 
+
 @media screen /*and (max-height: 700px)*/ and (max-width: 400px) {
     .portfolio {
         height: 550px;
+    }
+    .work-name {
+        line-height: 100%;
+    }
+    .work-description {
+        margin-top: 10px;
     }
 }

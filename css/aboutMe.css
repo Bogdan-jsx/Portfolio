@@ -194,11 +194,11 @@
     }
 }
 
-@media screen and (max-width: 1015px) {
+/* @media screen and (max-width: 1015px) {
     .about-me {
         height: 75vh;
     }
-}
+} */
 
 @media screen and (max-width: 830px) {
     .about-me-text-1, .about-me-text-2 {
@@ -212,11 +212,11 @@
         left: 890px;
     }
 }
-@media screen and (max-width: 450px) and (min-height: 601px) {
+/* @media screen and (max-width: 450px) and (min-height: 601px) {
     .about-me {
         height: 115vh;
     }
-}
+} */
 
 @media screen and (max-height: 700px) {
     .about-me {
