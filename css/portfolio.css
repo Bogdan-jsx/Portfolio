@@ -104,6 +104,10 @@ ul {
     display: block;
 }
 
+.work-name a {
+    color: white;
+}
+
 .one {
     background-image: url(../images/Teashop.png);
 }

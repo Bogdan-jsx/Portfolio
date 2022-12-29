@@ -116,6 +116,11 @@ nav ul li {
     cursor: pointer;
 }
 
+nav ul li a {
+    color: #e4b169;
+    text-decoration: none;
+}
+
 nav ul li:nth-child(1) {
     top: 0;
 }
