@@ -1,4 +1,4 @@
-fetch(`${process.env.WEBSITE_URL}works/`)
+fetch(`works/`)
     .then(res => res.json())
     .then(result => showWorks(result));
 
@@ -50,7 +50,7 @@ formElem.onsubmit = (e) => {
 }
 
 function sendMessage(message) {
-    fetch(`${process.env.WEBSITE_URL}messages/`, {
+    fetch(`messages/`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json;charset=utf-8'
