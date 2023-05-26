@@ -118,6 +118,8 @@ nav ul li {
 
 nav ul li a {
     color: #e4b169;
+    /* border: 1px solid black; */
+    -webkit-text-stroke: .5px white;
     text-decoration: none;
     transition: color .5s;
 }
@@ -142,7 +144,8 @@ nav ul li:hover {
 }
 
 nav ul li:hover > a {
-    color: #d2a360;
+    /* color: #d2a360; */
+    color: white;
 }
 
 /*Adaptivity*/
